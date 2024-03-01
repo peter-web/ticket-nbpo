@@ -1,0 +1,132 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  theme: {
+    extend: {
+      colors: {
+        steelblue: {
+          "100": "#268ac9",
+          "200": "#008aae",
+          "300": "#0163a2",
+          "400": "#004c74",
+          "500": "rgba(38, 138, 201, 0.09)",
+          "600": "rgba(1, 99, 162, 0.3)",
+        },
+        deepskyblue: "#26b0d4",
+        "gray-0": "#fff",
+        gray1: {
+          "100": "#fbfbfb",
+          "200": "#fafafa",
+          "300": "#949494",
+          "400": "#929292",
+          "500": "#8a7356",
+          "600": "#132530",
+          "700": "#070707",
+          "800": "rgba(255, 255, 255, 0.04)",
+          "900": "rgba(255, 255, 255, 0.3)",
+          "1000": "rgba(0, 0, 0, 0.3)",
+        },
+        azure: "#e6f4f1",
+        gainsboro: {
+          "100": "#e6e6e6",
+          "200": "#dfe3e8",
+          "300": "#ddd",
+        },
+        "dark-grey-400": "#212b36",
+        lightslategray: "rgba(145, 158, 171, 0.5)",
+        black: "#000",
+        lightgoldenrodyellow: "#ceffd0",
+        lime: "#09ea13",
+        navajowhite: "#ffe0af",
+        lightpink: "#febaba",
+        silver: "#c0c0c0",
+        whitesmoke: "#eee",
+        aliceblue: "#d7eefd",
+        aquamarine: "#00f6c1",
+        goldenrod: "#e39d22",
+        blanchedalmond: "#ffeccb",
+        palegoldenrod: "#cbfabd",
+        darkolivegreen: "#587c50",
+        forestgreen: "#5fbb52",
+        "gray-900": "#202020",
+        "gray-600": "#7e7e7e",
+      },
+      spacing: {},
+      fontFamily: {
+        "paragraph-d": "Inter",
+      },
+      borderRadius: {
+        "base-9": "16.9px",
+        "mid-5": "17.5px",
+        xl: "20px",
+        "31xl": "50px",
+        "3xs": "10px",
+        "8xs": "5px",
+        "5xs-5": "7.5px",
+        smi: "13px",
+        "41xl-3": "60.3px",
+        "5xs-3": "7.3px",
+        "21xl-4": "40.4px",
+      },
+    },
+    fontSize: {
+      "13xl": "32px",
+      lgi: "19px",
+      "7xl": "26px",
+      xl: "20px",
+      base: "16px",
+      sm: "14px",
+      lg: "18px",
+      "smi-8": "12.8px",
+      "5xl": "24px",
+      "6xl": "25px",
+      "20xl-1": "39.1px",
+      "2xl": "21px",
+      mid: "17px",
+      "12xl": "31px",
+      "12xl-3": "31.3px",
+      "mini-3": "14.3px",
+      "xs-6": "11.6px",
+      "3xs-7": "9.7px",
+      inherit: "inherit",
+    },
+    screens: {
+      mq1625: {
+        raw: "screen and (max-width: 1625px)",
+      },
+      mq1500: {
+        raw: "screen and (max-width: 1500px)",
+      },
+      mq1275: {
+        raw: "screen and (max-width: 1275px)",
+      },
+      lg: {
+        max: "1200px",
+      },
+      mq975: {
+        raw: "screen and (max-width: 975px)",
+      },
+      mq950: {
+        raw: "screen and (max-width: 950px)",
+      },
+      mq900: {
+        raw: "screen and (max-width: 900px)",
+      },
+      mq850: {
+        raw: "screen and (max-width: 850px)",
+      },
+      mq750: {
+        raw: "screen and (max-width: 750px)",
+      },
+      mq600: {
+        raw: "screen and (max-width: 600px)",
+      },
+      mq450: {
+        raw: "screen and (max-width: 450px)",
+      },
+    },
+  },
+  corePlugins: {
+    preflight: false,
+  },
+};
