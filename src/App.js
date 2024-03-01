@@ -6,8 +6,9 @@ import {
   useLocation,
 } from "react-router-dom";
 import Login from "./pages/Login";
-import SuperAdminDashboard from "./pages/SuperAdminDashboard";
 import SaTicketRequest from "./pages/SaTicketRequest";
+import SuperAdminDashboard from "./pages/SuperAdminDashboard";
+import SADTicket from "./pages/SADTicket";
 
 function App() {
   const action = useNavigationType();
@@ -29,11 +30,15 @@ function App() {
         title = "";
         metaDescription = "";
         break;
-      case "/superadmindashboard":
+      case "/saticketrequest":
         title = "";
         metaDescription = "";
         break;
-      case "/saticketrequest":
+      case "/super-admindashboard":
+        title = "";
+        metaDescription = "";
+        break;
+      case "/sadticket":
         title = "";
         metaDescription = "";
         break;
@@ -56,8 +61,9 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<Login />} />
-      <Route path="/superadmindashboard" element={<SuperAdminDashboard />} />
       <Route path="/saticketrequest" element={<SaTicketRequest />} />
+      <Route path="/super-admindashboard" element={<SuperAdminDashboard />} />
+      <Route path="/sadticket" element={<SADTicket />} />
     </Routes>
   );
 }

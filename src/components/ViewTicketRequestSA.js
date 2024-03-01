@@ -24,7 +24,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
   return (
     <>
       <div className="w-[705px] rounded-8xs bg-azure shadow-[0px_3px_5.8px_rgba(0,_0,_0,_0.25)] overflow-hidden flex flex-col items-center justify-start tracking-[normal] max-w-full max-h-full">
-        <header className="self-stretch bg-steelblue-300 overflow-hidden flex flex-row items-center justify-between py-[5px] pr-2.5 pl-[15px] sticky top-[0] z-[99] gap-[20px] text-left text-6xl text-gray-0 font-paragraph-d">
+        <header className="self-stretch bg-steelblue-300 overflow-hidden flex flex-row items-center justify-between py-[5px] pr-2.5 pl-[15px] sticky top-[0] z-[99] gap-[20px] text-left text-6xl text-gray-0 font-h5-d">
           <div className="relative whitespace-nowrap">Ticket Request</div>
           <div className="h-[27.8px] w-[27.8px] relative rounded-[60.33px] bg-gray-0 overflow-hidden shrink-0">
             <img
@@ -34,8 +34,8 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
             />
           </div>
         </header>
-        <section className="self-stretch h-[781px] overflow-y-auto shrink-0 flex flex-col items-center justify-start p-5 box-border gap-[15px_0px] max-w-full text-left text-xl text-black font-paragraph-d mq600:h-auto">
-          <section className="self-stretch rounded-[8.07px] bg-gray-0 shadow-[0px_3.2px_6.46px_rgba(0,_0,_0,_0.1)] flex flex-col items-start justify-start py-[16.14937400817871px] pr-[17px] pl-[16.14937400817871px] box-border gap-[8.88px_0px] shrink-0 max-w-full text-left text-xl text-gray-900 font-paragraph-d">
+        <section className="self-stretch h-[781px] overflow-y-auto shrink-0 flex flex-col items-center justify-start p-5 box-border gap-[15px_0px] max-w-full text-left text-xl text-black font-h5-d mq600:h-auto">
+          <section className="self-stretch rounded-[8.07px] bg-gray-0 shadow-[0px_3.2px_6.46px_rgba(0,_0,_0,_0.1)] flex flex-col items-start justify-start py-[16.14937400817871px] pr-[17px] pl-[16.14937400817871px] box-border gap-[8.88px_0px] shrink-0 max-w-full text-left text-xl text-gray-900 font-h5-d">
             <div className="self-stretch flex flex-row items-center justify-start max-w-full">
               <div className="flex-1 relative inline-block max-w-full mq450:text-base">
                 Ticket Info
@@ -82,7 +82,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
               </div>
             </div>
           </section>
-          <section className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[20px_15.12px] max-w-full text-left text-xl text-gray-900 font-paragraph-d">
+          <section className="self-stretch flex flex-row flex-wrap items-start justify-center gap-[20px_15.12px] max-w-full text-left text-xl text-gray-900 font-h5-d">
             <div className="flex-1 rounded-[7.25px] bg-gray-0 shadow-[0px_2.9px_5.8px_rgba(0,_0,_0,_0.1)] flex flex-col items-center justify-start pt-[14.507041931152344px] px-[21.760562896728516px] pb-[21.760562896728516px] box-border gap-[7.98px_0px] min-w-[200px] max-w-full">
               <div className="self-stretch flex flex-row items-center justify-between gap-[20px]">
                 <div className="w-[205.5px] relative inline-block shrink-0 mq450:text-base">
@@ -137,7 +137,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
                   <div className="w-[92.1px] flex-1 relative leading-[17.41px] font-medium inline-block">
                     Team Sneak
                   </div>
-                  <div className="w-[92.1px] relative text-[10.2px] leading-[14.51px] text-gray-600 inline-block h-[13.1px] shrink-0">
+                  <div className="w-[92.1px] relative text-2xs-2 leading-[14.51px] text-gray-600 inline-block h-[13.1px] shrink-0">
                     @sneakyteam
                   </div>
                 </div>
@@ -164,10 +164,10 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
               </div>
             </div>
           </section>
-          <section className="self-stretch rounded-[7.25px] bg-gray-0 shadow-[0px_2.9px_5.8px_rgba(0,_0,_0,_0.25)] overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[5px] px-0 pb-2.5 box-border gap-[5px_0px] max-w-full text-center text-base text-black font-paragraph-d">
+          <section className="self-stretch rounded-[7.25px] bg-gray-0 shadow-[0px_2.9px_5.8px_rgba(0,_0,_0,_0.25)] overflow-hidden shrink-0 flex flex-col items-start justify-start pt-[5px] px-0 pb-2.5 box-border gap-[5px_0px] max-w-full text-center text-base text-black font-h5-d">
             <div className="self-stretch box-border flex flex-row items-center justify-start py-[5px] px-2.5 max-w-full border-b-[2px] border-solid border-steelblue-200">
               <input
-                className="w-full [border:none] [outline:none] font-paragraph-d text-xl bg-[transparent] h-6 flex-1 relative text-black text-left flex items-center min-w-[250px] max-w-full mq450:text-base"
+                className="w-full [border:none] [outline:none] font-h5-d text-xl bg-[transparent] h-6 flex-1 relative text-black text-left flex items-center min-w-[250px] max-w-full mq450:text-base"
                 placeholder="Ticket Logs:"
                 type="text"
               />
@@ -240,7 +240,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
               </div>
             </div>
             <textarea
-              className="bg-gray1-200 h-[212px] w-auto [outline:none] self-stretch box-border flex flex-col items-center justify-start p-5 font-paragraph-d text-[17.8px] text-black border-[1px] border-solid border-gainsboro-300"
+              className="bg-gray1-200 h-[212px] w-auto [outline:none] self-stretch box-border flex flex-col items-center justify-start p-5 font-h5-d text-mid-8 text-black border-[1px] border-solid border-gainsboro-300"
               placeholder="I have some issue in my sofware app."
               rows={11}
               cols={33}
@@ -254,7 +254,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
                 </div>
                 <div className="w-[85px] flex flex-col items-start justify-start">
                   <FormControl
-                    className="self-stretch h-[27px] font-paragraph-d text-mini-3 text-black"
+                    className="self-stretch h-[27px] font-h5-d text-mini-3 text-black"
                     variant="outlined"
                     sx={{
                       borderRadius: "0px 0px 0px 0px",
@@ -316,7 +316,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
                   alt=""
                   src="/task-completed@2x.png"
                 />
-                <b className="relative text-[16.1px] font-paragraph-d text-steelblue-300 text-left">
+                <b className="relative text-base-1 font-h5-d text-steelblue-300 text-left">
                   Done
                 </b>
               </button>
@@ -331,7 +331,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
                     Write your resolution here . . .
                   </div>
                 </div>
-                <div className="h-[35px] w-[77px] rounded-[5.7px] bg-steelblue-300 box-border overflow-hidden shrink-0 flex flex-row items-center justify-start py-[5px] pr-[9px] pl-2.5 gap-[0px_5.7px] text-gray-0 border-[0.6px] border-solid border-gray-0">
+                <div className="h-[35px] w-[77px] rounded-7xs-7 bg-steelblue-300 box-border overflow-hidden shrink-0 flex flex-row items-center justify-start py-[5px] pr-[9px] pl-2.5 gap-[0px_5.7px] text-gray-0 border-[0.6px] border-solid border-gray-0">
                   <img
                     className="h-4 w-4 relative object-cover"
                     alt=""

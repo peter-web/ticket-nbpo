@@ -2,6 +2,9 @@ import { useState, useCallback } from "react";
 import AssignTicket from "../components/AssignTicket";
 import PortalPopup from "../components/PortalPopup";
 import ViewTicketRequestSA from "../components/ViewTicketRequestSA";
+import StatusOpen from "../components/StatusOpen";
+import StatusClosed from "../components/StatusClosed";
+import StatusPending from "../components/StatusPending";
 
 const SaTicketRequest = () => {
   const [isAssignTicketPopupOpen, setAssignTicketPopupOpen] = useState(false);
@@ -30,7 +33,7 @@ const SaTicketRequest = () => {
 
   return (
     <>
-      <div className="w-full relative bg-gray1-600 overflow-hidden flex flex-row items-start justify-start tracking-[normal] text-left text-2xl text-azure font-paragraph-d">
+      <div className="w-full relative bg-gray1-600 overflow-hidden flex flex-row items-start justify-start tracking-[normal] text-left text-2xl text-azure font-h5-d">
         <div className="h-[1080px] w-20 bg-gray1-600 shadow-[8px_4px_15px_rgba(0,_0,_0,_0.25)] overflow-hidden shrink-0 flex flex-col items-start justify-start py-[30px] px-[15px] box-border gap-[50px_0px] mq1275:pt-5 mq1275:pb-5 mq1275:box-border">
           <div className="self-stretch flex flex-row items-start justify-start">
             <img
@@ -97,7 +100,7 @@ const SaTicketRequest = () => {
             </div>
           </div>
         </div>
-        <footer className="flex-1 bg-azure flex flex-col items-start justify-start pt-5 pb-[520px] pr-5 pl-[30px] box-border gap-[26px_15px] max-w-[calc(100%_-_80px)] text-center text-20xl-1 text-black font-paragraph-d mq900:pb-[220px] mq900:box-border mq1275:pb-[338px] mq1275:box-border">
+        <footer className="flex-1 bg-azure flex flex-col items-start justify-start pt-5 pb-[520px] pr-5 pl-[30px] box-border gap-[26px_15px] max-w-[calc(100%_-_80px)] text-center text-20xl-1 text-black font-h5-d mq1275:pb-[338px] mq1275:box-border mq900:pb-[220px] mq900:box-border">
           <b className="relative inline-block text-steelblue-300 text-left min-w-[300px] mq450:text-[23px] mq900:text-12xl">
             Tickets Request
           </b>
@@ -350,8 +353,8 @@ const SaTicketRequest = () => {
               </div>
             </div>
           </div>
-          <section className="self-stretch rounded-xl bg-gray-0 shadow-[-4px_4px_10px_7px_rgba(0,_0,_0,_0.25)] flex flex-col items-start justify-start pt-5 px-0 pb-[15px] box-border gap-[20px_10px] min-w-[900px] max-w-full text-left text-xl text-black font-paragraph-d">
-            <header className="self-stretch flex flex-row flex-wrap items-center justify-start py-0 pr-[35px] pl-[25px] box-border gap-[10px_6.83px] top-[0] z-[99] sticky max-w-full text-left text-5xl text-black font-paragraph-d">
+          <section className="self-stretch rounded-xl bg-gray-0 shadow-[-4px_4px_10px_7px_rgba(0,_0,_0,_0.25)] flex flex-col items-start justify-start pt-5 px-0 pb-[15px] box-border gap-[20px_10px] min-w-[900px] max-w-full text-left text-xl text-black font-h5-d">
+            <header className="self-stretch flex flex-row flex-wrap items-center justify-start py-0 pr-[35px] pl-[25px] box-border gap-[10px_6.83px] top-[0] z-[99] sticky max-w-full text-left text-5xl text-black font-h5-d">
               <div className="w-[632px] flex flex-col items-start justify-center gap-[5px_0px] min-w-[200px] max-w-full">
                 <div className="relative tracking-[0.01em] leading-[100%] whitespace-nowrap">
                   All Tickets
@@ -368,7 +371,7 @@ const SaTicketRequest = () => {
                       alt=""
                       src="/collaborating-in-circle@2x.png"
                     />
-                    <div className="relative text-[18.3px] font-paragraph-d text-black text-left whitespace-nowrap">
+                    <div className="relative text-lg-3 font-h5-d text-black text-left whitespace-nowrap">
                       All Department
                     </div>
                     <img
@@ -393,7 +396,7 @@ const SaTicketRequest = () => {
                   src="/search.svg"
                 />
                 <input
-                  className="w-[calc(100%_-_84px)] [border:none] [outline:none] font-paragraph-d text-xl bg-[transparent] h-6 flex-1 relative text-gainsboro-300 text-left flex items-center min-w-[184px] whitespace-nowrap"
+                  className="w-[calc(100%_-_84px)] [border:none] [outline:none] font-h5-d text-xl bg-[transparent] h-6 flex-1 relative text-gainsboro-300 text-left flex items-center min-w-[184px] whitespace-nowrap"
                   placeholder="Search Ticket"
                   type="text"
                 />
@@ -493,7 +496,7 @@ const SaTicketRequest = () => {
                   </div>
                 </div>
               </div>
-              <div className="self-stretch overflow-y-auto flex flex-row items-center justify-start py-1.5 pr-[13px] pl-[88px] gap-[0px_19px] border-b-[2px] border-solid border-gray1-1000 mq1625:flex-wrap mq900:pl-[22px] mq900:box-border mq1275:pl-11 mq1275:box-border">
+              <div className="self-stretch overflow-y-auto flex flex-row items-center justify-start py-1.5 pr-[13px] pl-[88px] gap-[0px_19px] border-b-[2px] border-solid border-gray1-1000 mq1275:pl-11 mq1275:box-border mq1625:flex-wrap mq900:pl-[22px] mq900:box-border">
                 <div className="w-[119px] flex flex-col items-start justify-start">
                   <div className="relative mq450:text-base">634</div>
                 </div>
@@ -504,12 +507,7 @@ const SaTicketRequest = () => {
                   <div className="relative mq450:text-base">Category</div>
                 </div>
                 <div className="w-[207px] flex flex-col items-start justify-start">
-                  <div className="rounded-31xl bg-lightgoldenrodyellow overflow-hidden flex flex-row items-center justify-center p-[3px]">
-                    <div className="flex flex-row items-center justify-start py-0 px-2 gap-[0px_3px]">
-                      <div className="h-2.5 w-2.5 relative rounded-[50%] box-border border-[0px] border-solid border-lime" />
-                      <div className="relative mq450:text-base">Open</div>
-                    </div>
-                  </div>
+                  <StatusOpen />
                 </div>
                 <div className="w-[113px] flex flex-col items-start justify-start">
                   <div className="relative mq450:text-base">HR</div>
@@ -564,7 +562,7 @@ const SaTicketRequest = () => {
                             src="/frame-frame.svg"
                           />
                         </div>
-                        <div className="relative text-xl font-paragraph-d text-black text-left mq450:text-base">
+                        <div className="relative text-xl font-h5-d text-black text-left mq450:text-base">
                           Closed
                         </div>
                       </div>
@@ -612,20 +610,7 @@ const SaTicketRequest = () => {
                     <div className="relative mq450:text-base">Category</div>
                   </div>
                   <div className="w-[196px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-2.5 px-5 box-border flex-[0.963]">
-                    <button className="cursor-pointer [border:none] py-[3px] px-2 bg-lightpink rounded-31xl overflow-hidden flex flex-col items-start justify-center">
-                      <div className="flex flex-row items-center justify-start py-0 px-[3px] gap-[0px_3px]">
-                        <div className="flex flex-row items-center justify-start">
-                          <img
-                            className="h-2.5 w-2.5 relative"
-                            alt=""
-                            src="/frame-frame.svg"
-                          />
-                        </div>
-                        <div className="relative text-xl font-paragraph-d text-black text-left mq450:text-base">
-                          Closed
-                        </div>
-                      </div>
-                    </button>
+                    <StatusClosed />
                   </div>
                   <div className="w-[196px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-2.5 px-5 box-border flex-[0.963]">
                     <div className="relative mq450:text-base">IT</div>
@@ -671,18 +656,7 @@ const SaTicketRequest = () => {
                     <div className="relative mq450:text-base">Category</div>
                   </div>
                   <div className="w-[196px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-2.5 px-5 box-border">
-                    <button className="cursor-pointer [border:none] py-[3px] px-2 bg-navajowhite rounded-31xl overflow-hidden flex flex-col items-start justify-start">
-                      <div className="flex flex-row items-center justify-start py-0 px-[3px] gap-[0px_5px]">
-                        <img
-                          className="h-1 w-2.5 relative"
-                          alt=""
-                          src="/line-5.svg"
-                        />
-                        <div className="relative text-xl font-paragraph-d text-black text-left mq450:text-base">
-                          Pending
-                        </div>
-                      </div>
-                    </button>
+                    <StatusPending />
                   </div>
                   <div className="w-[196px] overflow-hidden shrink-0 flex flex-row items-center justify-center py-2.5 px-5 box-border">
                     <div className="relative mq450:text-base">HR</div>
@@ -726,12 +700,7 @@ const SaTicketRequest = () => {
                     <div className="relative mq450:text-base">Category</div>
                   </div>
                   <div className="w-[211px] flex flex-col items-start justify-start">
-                    <div className="rounded-31xl bg-lightgoldenrodyellow overflow-hidden flex flex-row items-center justify-center p-[3px]">
-                      <div className="flex flex-row items-center justify-start py-0 px-2 gap-[0px_3px]">
-                        <div className="h-2.5 w-2.5 relative rounded-[50%] box-border border-[0px] border-solid border-lime" />
-                        <div className="relative mq450:text-base">Open</div>
-                      </div>
-                    </div>
+                    <StatusOpen />
                   </div>
                   <div className="w-[182px] flex flex-col items-start justify-start">
                     <div className="relative mq450:text-base">IT</div>
@@ -773,12 +742,7 @@ const SaTicketRequest = () => {
                     <div className="relative mq450:text-base">Category</div>
                   </div>
                   <div className="w-[207px] flex flex-col items-start justify-start">
-                    <div className="rounded-31xl bg-lightgoldenrodyellow overflow-hidden flex flex-row items-center justify-center p-[3px]">
-                      <div className="flex flex-row items-center justify-start py-0 px-2 gap-[0px_3px]">
-                        <div className="h-2.5 w-2.5 relative rounded-[50%] box-border border-[0px] border-solid border-lime" />
-                        <div className="relative mq450:text-base">Open</div>
-                      </div>
-                    </div>
+                    <StatusOpen />
                   </div>
                   <div className="w-[186px] flex flex-col items-start justify-start">
                     <div className="relative mq450:text-base">HR</div>
@@ -829,7 +793,7 @@ const SaTicketRequest = () => {
                             src="/frame-frame.svg"
                           />
                         </div>
-                        <div className="relative text-xl font-paragraph-d text-black text-left mq450:text-base">
+                        <div className="relative text-xl font-h5-d text-black text-left mq450:text-base">
                           Closed
                         </div>
                       </div>
@@ -886,7 +850,7 @@ const SaTicketRequest = () => {
                           alt=""
                           src="/line-5.svg"
                         />
-                        <div className="relative text-xl font-paragraph-d text-black text-left mq450:text-base">
+                        <div className="relative text-xl font-h5-d text-black text-left mq450:text-base">
                           Pending
                         </div>
                       </div>
@@ -934,12 +898,7 @@ const SaTicketRequest = () => {
                     <div className="flex flex-col items-start justify-start py-0 pr-[9px] pl-0">
                       <div className="relative mq450:text-base">Category</div>
                     </div>
-                    <div className="rounded-31xl bg-lightgoldenrodyellow overflow-hidden flex flex-row items-center justify-center p-[3px]">
-                      <div className="flex flex-row items-center justify-start py-0 px-2 gap-[0px_3px]">
-                        <div className="h-2.5 w-2.5 relative rounded-[50%] box-border border-[0px] border-solid border-lime" />
-                        <div className="relative mq450:text-base">Open</div>
-                      </div>
-                    </div>
+                    <StatusOpen />
                     <div className="relative mq450:text-base">Accounting</div>
                   </div>
                   <div className="w-[105px] flex flex-col items-start justify-start">
@@ -979,12 +938,7 @@ const SaTicketRequest = () => {
                     <div className="relative mq450:text-base">Category</div>
                   </div>
                   <div className="w-[211px] flex flex-col items-start justify-start">
-                    <div className="rounded-31xl bg-lightgoldenrodyellow overflow-hidden flex flex-row items-center justify-center p-[3px]">
-                      <div className="flex flex-row items-center justify-start py-0 px-2 gap-[0px_3px]">
-                        <div className="h-2.5 w-2.5 relative rounded-[50%] box-border border-[0px] border-solid border-lime" />
-                        <div className="relative mq450:text-base">Open</div>
-                      </div>
-                    </div>
+                    <StatusOpen />
                   </div>
                   <div className="w-[182px] flex flex-col items-start justify-start">
                     <div className="relative mq450:text-base">IT</div>
@@ -1024,12 +978,7 @@ const SaTicketRequest = () => {
                     <div className="relative mq450:text-base">Category</div>
                   </div>
                   <div className="w-[207px] flex flex-col items-start justify-start">
-                    <div className="rounded-31xl bg-lightgoldenrodyellow overflow-hidden flex flex-row items-center justify-center p-[3px]">
-                      <div className="flex flex-row items-center justify-start py-0 px-2 gap-[0px_3px]">
-                        <div className="h-2.5 w-2.5 relative rounded-[50%] box-border border-[0px] border-solid border-lime" />
-                        <div className="relative mq450:text-base">Open</div>
-                      </div>
-                    </div>
+                    <StatusOpen />
                   </div>
                   <div className="w-[186px] flex flex-col items-start justify-start">
                     <div className="relative mq450:text-base">HR</div>
@@ -1071,12 +1020,7 @@ const SaTicketRequest = () => {
                     <div className="relative mq450:text-base">Category</div>
                   </div>
                   <div className="w-[207px] flex flex-col items-start justify-start">
-                    <div className="rounded-31xl bg-lightgoldenrodyellow overflow-hidden flex flex-row items-center justify-center p-[3px]">
-                      <div className="flex flex-row items-center justify-start py-0 px-2 gap-[0px_3px]">
-                        <div className="h-2.5 w-2.5 relative rounded-[50%] box-border border-[0px] border-solid border-lime" />
-                        <div className="relative mq450:text-base">Open</div>
-                      </div>
-                    </div>
+                    <StatusOpen />
                   </div>
                   <div className="w-[186px] flex flex-col items-start justify-start">
                     <div className="relative mq450:text-base">HR</div>
