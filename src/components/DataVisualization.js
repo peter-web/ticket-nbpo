@@ -26,7 +26,7 @@ const DataVisualization = memo(() => {
         <img
           className="w-6 h-6 relative object-cover hidden"
           alt=""
-          src="/ellipsis@2x.png"
+          src="/ellipsis1@2x.png"
         />
         <div className="self-stretch h-[5px] relative box-border border-t-[5px] border-solid border-steelblue-200" />
       </div>
@@ -40,7 +40,7 @@ const DataVisualization = memo(() => {
         <img
           className="w-6 h-6 relative object-cover hidden"
           alt=""
-          src="/ellipsis@2x.png"
+          src="/ellipsis2@2x.png"
         />
         <div className="self-stretch h-[5px] relative box-border border-t-[5px] border-solid border-steelblue-200" />
         <form className="m-0 self-stretch flex flex-col items-start justify-start border-[2px] border-solid border-whitesmoke">

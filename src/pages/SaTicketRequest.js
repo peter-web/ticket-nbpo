@@ -46,7 +46,7 @@ const SaTicketRequest = () => {
                 <img
                   className="h-[23.4px] w-[23.4px] relative overflow-hidden shrink-0"
                   alt=""
-                  src="/layout-dashboard.svg"
+                  src="/layout-dashboard1.svg"
                 />
                 <div className="w-[109px] relative hidden mq450:text-mid">
                   Dashboard
@@ -56,7 +56,7 @@ const SaTicketRequest = () => {
                 <img
                   className="h-[23.4px] w-[23.4px] relative overflow-hidden shrink-0"
                   alt=""
-                  src="/ticket.svg"
+                  src="/ticket1.svg"
                 />
                 <div className="w-[149px] relative hidden mq450:text-mid">
                   Ticket Request
@@ -201,7 +201,7 @@ const SaTicketRequest = () => {
                 <img
                   className="h-6 w-6 absolute !m-[0] top-[12.6px] right-[-1px] object-cover z-[1]"
                   alt=""
-                  src="/ellipsis@2x.png"
+                  src="/ellipsis1@2x.png"
                 />
               </div>
               <div className="self-stretch h-0 relative box-border border-t-[5px] border-solid border-steelblue-200" />
@@ -272,7 +272,7 @@ const SaTicketRequest = () => {
                 <img
                   className="h-6 w-6 absolute !m-[0] top-[12.6px] right-[-1px] object-cover z-[1]"
                   alt=""
-                  src="/ellipsis@2x.png"
+                  src="/ellipsis2@2x.png"
                 />
               </div>
               <div className="self-stretch h-0 relative box-border border-t-[5px] border-solid border-steelblue-200" />
@@ -374,7 +374,7 @@ const SaTicketRequest = () => {
                     <img
                       className="h-6 w-6 relative object-cover min-h-[24px]"
                       alt=""
-                      src="/expand-arrow@2x.png"
+                      src="/expand-arrow1@2x.png"
                     />
                   </div>
                 </button>
@@ -408,7 +408,7 @@ const SaTicketRequest = () => {
                   <img
                     className="h-5 w-2.5 relative hidden z-[2]"
                     alt=""
-                    src="/vector.svg"
+                    src="/vector1.svg"
                   />
                 </div>
                 <div className="w-[196px] overflow-hidden shrink-0 flex flex-row items-center justify-center p-[15px] box-border">
@@ -418,7 +418,7 @@ const SaTicketRequest = () => {
                   <img
                     className="h-5 w-2.5 relative hidden z-[2]"
                     alt=""
-                    src="/vector.svg"
+                    src="/vector1.svg"
                   />
                 </div>
                 <div className="w-[196px] shrink-0 flex flex-col items-start justify-start py-0 px-0 box-border">
@@ -429,7 +429,7 @@ const SaTicketRequest = () => {
                     <img
                       className="h-5 w-2.5 relative hidden z-[2]"
                       alt=""
-                      src="/vector.svg"
+                      src="/vector1.svg"
                     />
                   </div>
                 </div>
@@ -440,7 +440,7 @@ const SaTicketRequest = () => {
                   <img
                     className="h-5 w-2.5 relative hidden z-[2]"
                     alt=""
-                    src="/vector.svg"
+                    src="/vector1.svg"
                   />
                 </div>
                 <div className="w-[196px] overflow-hidden shrink-0 flex flex-row items-center justify-center p-[15px] box-border">
@@ -450,7 +450,7 @@ const SaTicketRequest = () => {
                   <img
                     className="h-5 w-2.5 relative hidden z-[2]"
                     alt=""
-                    src="/vector.svg"
+                    src="/vector1.svg"
                   />
                 </div>
                 <div className="w-[196px] shrink-0 flex flex-col items-start justify-start py-0 px-0 box-border">
@@ -461,7 +461,7 @@ const SaTicketRequest = () => {
                     <img
                       className="h-5 w-2.5 relative hidden z-[2]"
                       alt=""
-                      src="/vector.svg"
+                      src="/vector1.svg"
                     />
                   </div>
                 </div>
@@ -472,7 +472,7 @@ const SaTicketRequest = () => {
                   <img
                     className="h-5 w-2.5 relative hidden z-[2]"
                     alt=""
-                    src="/vector.svg"
+                    src="/vector1.svg"
                   />
                 </div>
                 <div className="w-[196px] overflow-hidden shrink-0 flex flex-row items-center justify-center p-[15px] box-border">
@@ -482,7 +482,7 @@ const SaTicketRequest = () => {
                   <img
                     className="h-5 w-2.5 relative hidden z-[2]"
                     alt=""
-                    src="/vector.svg"
+                    src="/vector1.svg"
                   />
                 </div>
                 <div className="w-[196px] shrink-0 flex flex-col items-start justify-start py-0 px-0 box-border">

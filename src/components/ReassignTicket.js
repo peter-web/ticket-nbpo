@@ -55,7 +55,7 @@ const ReassignTicket = memo(({ onClose }) => {
               <img
                 className="h-[30px] w-[30px] relative object-cover"
                 alt=""
-                src="/expand-arrow@2x.png"
+                src="/expand-arrow2@2x.png"
               />
             </div>
           </div>

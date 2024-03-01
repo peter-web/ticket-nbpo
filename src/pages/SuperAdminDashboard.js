@@ -1,7 +1,7 @@
 import { useCallback } from "react";
 import SideNav from "../components/SideNav";
 import DataVisualization from "../components/DataVisualization";
-import TicketTable from "../Table";
+import TicketTable from "../components/Table";
 
 const SuperAdminDashboard = () => {
   const onLogoutClick = useCallback(() => {

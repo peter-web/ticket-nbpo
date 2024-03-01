@@ -30,7 +30,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
             <img
               className="absolute top-[4.2px] left-[4.2px] w-[18.7px] h-[18.7px] object-cover"
               alt=""
-              src="/close@2x.png"
+              src="/close1@2x.png"
             />
           </div>
         </header>
@@ -91,7 +91,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
                 <img
                   className="h-5 w-5 relative object-cover min-h-[20px] cursor-pointer"
                   alt=""
-                  src="/ellipsis@2x.png"
+                  src="/ellipsis3@2x.png"
                   onClick={openReassignTicket}
                 />
               </div>
@@ -100,7 +100,7 @@ const ViewTicketRequestSA = memo(({ onClose }) => {
                   <img
                     className="h-8 w-8 relative object-cover"
                     alt=""
-                    src="/component-2@2x.png"
+                    src="/component-21@2x.png"
                   />
                 </div>
                 <div className="h-[33px] w-[228.2px] hidden flex-col items-start justify-start">
